@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.breadcrumb .breadcrumb-item a {
+	text-decoration: none;
+}
+
+.card{
+	box-shadow: 0 0 6px 1px rgba(250,250,250, 0.1);
+}
+
+@media(max-width: 768px){
+	#navshow{
+	display: none;
+	}
+}
+
+#navshow nav a {
+	transition: 0.8s;
+	font-weight: 600;
+	color: #000;
+}
+#navshow nav a:hover {
+	color: #007bff;
+}
+.togglebar button{
+	border:none;
+	padding: 8px;
+	font-size: 18px;
+}
