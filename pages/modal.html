@@ -1,0 +1,111 @@
+<html>
+<head>
+	<title>Admin Panel</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Mahadi Hasan,mahadiweb,pro tutorials bd">
+	<link rel="stylesheet" href="../css/font-awesome-4.7.0.min.css"/>
+</head>
+<body class="bg-dark">
+
+<div class="container mt-5">
+	<h3 class="text-center text-white mb-4">Admin Panel</h3>
+	<div class="row">
+		<div class="col-md-10 col-11 mx-auto">
+			<!-- breadcrumb bar -->
+			<nav aria-label="breadcrumb" class="mb-3">
+			  <ol class="breadcrumb">
+			    <li class="breadcrumb-item"><a href="#">Home</a></li>
+			    <li class="breadcrumb-item"><a href="#">User</a></li>
+			    <li class="breadcrumb-item active" aria-current="page">Data</li>
+			  </ol>
+			</nav>
+
+			<!-- mobile toggler -->
+			<div class="togglebar d-lg-none d-md-none d-block mx-auto text-right mb-2">
+				<button><i class="fa fa-bars"></i></button>
+			</div>
+
+			<!-- left side menubar -->
+			<div class="row">
+				<div class="col-lg-3 col-md-4 d-md-block mb-2" id="navshow">
+					<div class="card card-left">
+						<div class="card-body">
+							<nav class="nav flex-column">
+							  <a class="nav-link active" href="#"><i class="fa fa-home"></i> Home</a>
+							  <a class="nav-link" href="#"><i class="fa fa-edit"></i> Post</a>
+							  <a class="nav-link" href="#"><i class="fa fa-file-text"></i> Pages</a>
+
+					 	 	  <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link"><i class="fa fa-user"></i> Submenu</a>
+						 	 	  <ul class="collapse list-unstyled" id="homeSubmenu">
+						 	 	  	<li>
+						 	 	  		<a href="#" class="nav-link">Home 1</a>
+						 	 	  	</li>
+						 	 	  	<li>
+						 	 	  		<a href="#" class="nav-link">Home 2</a>
+						 	 	  	</li>
+						 	 	  </ul>
+
+							  <a class="nav-link" href="#"><i class="fa fa-sign-in"></i> Logout</a>
+							</nav>
+						</div>
+					</div>
+				</div>
+
+				<!-- content area -->
+				<div class="col-lg-9 col-md-8">
+
+					<!-- content -->
+					<div class="card">
+						<div class="card-header">
+							card
+						</div>
+						<div class="card-body">
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+							  Launch demo modal
+							</button>
+
+							<!-- Modal -->
+							<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							  <div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+							      <div class="modal-body">
+							        ...
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							        <button type="button" class="btn btn-primary">Save changes</button>
+							      </div>
+							    </div>
+							  </div>
+</div>
+						</div>
+					</div>
+					<!-- content end -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/popper.min.js"></script>
+
+<script type="text/javascript">
+	$(".togglebar").click(function() {
+		$("#navshow").toggle();
+	});
+</script>
+</body>
+</html>
